@@ -3,6 +3,9 @@ package bandeau;
 import java.awt.Color;
 import java.awt.Font;
 
+
+//Modification Nora
+
 public class ExempleDUtilisation {
     private final Bandeau monBandeau = new Bandeau();
     
