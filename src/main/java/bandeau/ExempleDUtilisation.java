@@ -20,7 +20,7 @@ public class ExempleDUtilisation {
         Color fore = monBandeau.getForeground();
 
         monBandeau.setMessage("Hello");
-	monBandeau.sleep(1000);
+	monBandeau.sleep(1000); //temps d'affichage du message précédent
 	monBandeau.setMessage("On va changer de police");
 	monBandeau.sleep(1000);
 	monBandeau.setMessage("Monospaced 15 Bold");
