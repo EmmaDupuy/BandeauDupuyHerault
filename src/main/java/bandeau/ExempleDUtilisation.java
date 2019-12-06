@@ -6,6 +6,7 @@ import java.awt.Font;
 
 //Modification Nora
 //Emma
+//coucou
 
 public class ExempleDUtilisation {
     private final Bandeau monBandeau = new Bandeau();
