@@ -13,8 +13,7 @@ public class DefilementCouleur extends Effet{
     public DefilementCouleur (Bandeau bandeau){
         this.bandeauCouleur = bandeau;
     }
-    public void afficherDefilementCouleur(){
-        bandeauCouleur.setMessage("Defilement couleur");
+    public void afficher(){
         bandeauCouleur.sleep(500);
         bandeauCouleur.setForeground(Color.red);
         bandeauCouleur.sleep(500);

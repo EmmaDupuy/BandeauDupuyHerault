@@ -14,9 +14,8 @@ public class Zoom extends Effet{
     public Zoom(Bandeau pbandeau){
         this.bandeauZoom = pbandeau;
     }
-    public void afficherZoom(){
-        bandeauZoom.setMessage("Zoom");
-	for (int i = 5; i < 100 ; i+=5) {
+    public void afficher(){
+        for (int i = 5; i < 100 ; i+=5) {
 		bandeauZoom.setFont(new Font("Dialog", Font.BOLD, 5+i));
 		bandeauZoom.sleep(100);
 	}
