@@ -6,6 +6,7 @@
 package bandeau;
 
 import java.awt.Color;
+import java.util.Random;
 
 public class DefilementCouleur extends Effet{
     private Bandeau bandeauCouleur ;
@@ -14,17 +15,11 @@ public class DefilementCouleur extends Effet{
         this.bandeauCouleur = bandeau;
     }
     public void afficher(){
-        bandeauCouleur.sleep(500);
-        bandeauCouleur.setForeground(Color.red);
-        bandeauCouleur.sleep(500);
-        bandeauCouleur.setForeground(Color.yellow);
-        bandeauCouleur.sleep(500);
-        bandeauCouleur.setForeground(Color.blue);
-        bandeauCouleur.sleep(500);
-        bandeauCouleur.setForeground(Color.green);
-        bandeauCouleur.sleep(500);
-        bandeauCouleur.setForeground(Color.PINK);
-        bandeauCouleur.sleep(500);
-        bandeauCouleur.setForeground(Color.magenta);        
+        Random rand = new Random();
+        float r = rand.nextFloat();
+        float g = rand.nextFloat();
+        float b = rand.nextFloat();
+        Color randomColor = new Color(r, g, b);
+        bandeauCouleur.setForeground(randomColor);
     }
 }
