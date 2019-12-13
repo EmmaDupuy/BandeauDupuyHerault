@@ -22,7 +22,7 @@ public class Scenario {
     }
     public void jouer(){
         for (ElementScenario ligneEffet: effets) {
-            for (int i=0 ; i <= ligneEffet.getRepetition(); i++){
+            for (int i=1 ; i <= ligneEffet.getRepetition(); i++){
                 ligneEffet.getEffet().afficher();
             }
         }

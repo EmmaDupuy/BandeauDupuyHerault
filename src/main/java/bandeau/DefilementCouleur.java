@@ -15,11 +15,13 @@ public class DefilementCouleur extends Effet{
         this.bandeauCouleur = bandeau;
     }
     public void afficher(){
+        bandeauCouleur.setMessage("Défilement");
         Random rand = new Random();
         float r = rand.nextFloat();
         float g = rand.nextFloat();
         float b = rand.nextFloat();
         Color randomColor = new Color(r, g, b);
         bandeauCouleur.setForeground(randomColor);
+        bandeauCouleur.sleep(500);
     }
 }

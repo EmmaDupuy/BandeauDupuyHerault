@@ -15,8 +15,8 @@ public class Clignotant extends Effet{
     }
     public void afficher(){
             bandeauClignotant.setMessage("Coucou");
-            bandeauClignotant.sleep(1000);
+            bandeauClignotant.sleep(75);
             bandeauClignotant.setMessage("");
-            bandeauClignotant.sleep(1000);
+            bandeauClignotant.sleep(75);
     }
 }
