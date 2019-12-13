@@ -5,10 +5,26 @@
  */
 package bandeau;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author nherault
  */
 public class Scenario {
+    private ArrayList<ElementScenario> effets;
     
+    public Scenario(){
+        effets = new ArrayList<ElementScenario>();
+    }
+    public void ajoutEffet(ElementScenario es){
+        effets.add(es);
+    }
+    public void jouer(){
+        for (ElementScenario ligneEffet: effets) {
+            for (int i=0 ; i <= ligneEffet.getRepetition(); i++){
+                ligneEffet.getEffet().afficher();
+            }
+        }
+    }
 }
