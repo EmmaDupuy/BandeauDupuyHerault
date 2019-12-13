@@ -5,6 +5,27 @@
  */
 package bandeau;
 
+import java.awt.Color;
+
 public class DefilementCouleur extends Effet{
+    private Bandeau bandeauCouleur ;
     
+    public DefilementCouleur (Bandeau bandeau){
+        this.bandeauCouleur = bandeau;
+    }
+    public void afficherDefilementCouleur(){
+        bandeauCouleur.setMessage("Defilement couleur");
+        bandeauCouleur.sleep(500);
+        bandeauCouleur.setForeground(Color.red);
+        bandeauCouleur.sleep(500);
+        bandeauCouleur.setForeground(Color.yellow);
+        bandeauCouleur.sleep(500);
+        bandeauCouleur.setForeground(Color.blue);
+        bandeauCouleur.sleep(500);
+        bandeauCouleur.setForeground(Color.green);
+        bandeauCouleur.sleep(500);
+        bandeauCouleur.setForeground(Color.PINK);
+        bandeauCouleur.sleep(500);
+        bandeauCouleur.setForeground(Color.magenta);        
+    }
 }
