@@ -5,6 +5,20 @@
  */
 package bandeau;
 
+import java.awt.Font;
+
 public class Clignotant extends Effet{
+    private Bandeau bandeauClignotant ;
     
+    public Clignotant(Bandeau pbandeau){
+        this.bandeauClignotant = pbandeau;
+    }
+    public void afficherClignotant(int nbClignotement){
+        for (int i = 0; i <= nbClignotement; i++) {
+            bandeauClignotant.setMessage("Coucou");
+            bandeauClignotant.sleep(1000);
+            bandeauClignotant.setMessage("");
+            bandeauClignotant.sleep(1000);
+        }
+    }
 }
